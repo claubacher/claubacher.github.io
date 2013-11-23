@@ -63,3 +63,27 @@ h1 {
   #salutation h1 {
     -webkit-animation: 1s appear ease-out;
     animation: 1s appear ease-out; }
+  #salutation p {
+    margin-top: 0; }
+
+/* ------ About me ------ */
+#dict-entry {
+  margin-top: 1em; }
+
+#pronunciation-guide {
+  letter-spacing: 1px; }
+
+#profile-photo {
+  background: url("/profile_photo.png") no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: left;
+  margin: 1em 64px 16px 0; }
+
+.footer {
+  padding: 8px 0;
+  text-align: center; }
+
+.footer a {
+  margin-right: 12px; }
