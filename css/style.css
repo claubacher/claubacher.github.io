@@ -66,6 +66,10 @@ h1 {
     padding-top: 5%;
     width: 50%;
     text-align: center; }
+  #salutation ul {
+    list-style: none;
+    text-align: center;
+    padding: 0; }
   #salutation h1 {
     -webkit-animation: 1s appear ease-out;
     animation: 1s appear ease-out; }
@@ -132,9 +136,8 @@ h1 {
   text-align: center; }
 #contact ul {
   list-style: none;
-  text-align: center; }
-  #contact ul li {
-    padding: 6px; }
+  text-align: center;
+  padding: 0; }
 #contact i {
   margin-right: 8px;
   text-decoration: none; }
