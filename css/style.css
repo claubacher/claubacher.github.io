@@ -28,7 +28,6 @@ section {
 .container {
   width: 60%;
   margin: 0 auto;
-  padding-top: 2%;
   padding-bottom: 4%; }
 
 h1 {
@@ -38,7 +37,8 @@ h1 {
   margin: 0;
   padding-left: 10px;
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
 
 /* -------- Hi -------- */
 @-webkit-keyframes appear {
@@ -62,7 +62,9 @@ h1 {
 #salutation {
   position: relative; }
   #salutation .container {
-    padding-top: 5%; }
+    padding-top: 5%;
+    width: 50%;
+    text-align: center; }
   #salutation h1 {
     -webkit-animation: 1s appear ease-out;
     animation: 1s appear ease-out; }
@@ -81,8 +83,8 @@ h1 {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  float: left;
-  margin: 1em 64px 16px 0; }
+  float: right;
+  margin: 1em 0 16px 32px; }
 
 .footer {
   padding: 8px 0;
@@ -96,22 +98,28 @@ h1 {
   display: none; }
 
 .project-selector {
+  font-size: 20px;
   position: relative; }
   .project-selector input[type="radio"] {
     display: none; }
   .project-selector label {
     display: block;
     width: 20%;
-    margin-right: 100%; }
+    margin-right: 80%;
+    padding: 6px; }
     .project-selector label:hover {
       background-color: #d1977d; }
   .project-selector input[type="radio"]:checked + .project-group label {
     background-color: #be7d5f; }
   .project-selector input[type="radio"]:checked + .project-group .project {
-    width: calc(80% - 20px);
+    width: 70%;
     display: inline-block;
     position: absolute;
     top: 0;
     right: 0; }
     .project-selector input[type="radio"]:checked + .project-group .project .screenshot {
-      width: 100%; }
+      width: 100%;
+      max-height: 270px; }
+
+.project-points {
+  padding-left: 22px; }
