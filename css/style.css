@@ -4,14 +4,15 @@ html, body {
 body {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px; }
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased; }
 
 a {
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 a:hover {
-  background-color: #ff0066;
-  text-decoration: none; }
+  background-color: #ff0066; }
 
 section {
   min-height: 768px;
@@ -115,7 +116,9 @@ h1 {
     .project-selector label:hover {
       background-color: #d1977d; }
   .project-selector input[type="radio"]:checked + .project-group label {
-    background-color: #be7d5f; }
+    border: 1px solid white;
+    padding: 5px;
+    background-color: #cc8e72; }
   .project-selector input[type="radio"]:checked + .project-group .project {
     width: 70%;
     display: inline-block;
@@ -124,7 +127,15 @@ h1 {
     right: 0; }
     .project-selector input[type="radio"]:checked + .project-group .project .screenshot {
       width: 100%;
-      max-height: 270px; }
+      max-height: 270px;
+      margin: 0;
+      opacity: 0.9; }
+      .project-selector input[type="radio"]:checked + .project-group .project .screenshot:hover {
+        opacity: 1; }
+    .project-selector input[type="radio"]:checked + .project-group .project a:hover {
+      background-color: #cc8e72; }
+    .project-selector input[type="radio"]:checked + .project-group .project h3 a:hover {
+      background-color: #ff0066; }
 
 .project-points {
   padding-left: 22px; }
