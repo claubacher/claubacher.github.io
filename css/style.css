@@ -9,10 +9,12 @@ body {
 
 a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-left: 4px;
+  padding-right: 4px; }
 
 a:hover {
-  background-color: #ff0066; }
+  background-color: #d30068; }
 
 section {
   min-height: 768px;
@@ -78,10 +80,10 @@ h1 {
     margin-top: 0; }
 
 /* ------ About me ------ */
-#dict-entry {
-  margin-top: 1em; }
+#about h3 {
+  margin-top: 0; }
 
-#pronunciation-guide {
+.pronunciation-guide {
   letter-spacing: 1px; }
 
 #profile-photo {
@@ -91,13 +93,6 @@ h1 {
   border-radius: 100px;
   float: right;
   margin: 1em 0 16px 32px; }
-
-.footer {
-  padding: 8px 0;
-  text-align: center; }
-
-.footer a {
-  margin-right: 12px; }
 
 /* ----- Projects ----- */
 .project {
@@ -110,21 +105,23 @@ h1 {
     display: none; }
   .project-selector label {
     display: block;
-    width: 20%;
-    margin-right: 80%;
+    width: 25%;
+    margin-left: 75%;
     padding: 6px; }
     .project-selector label:hover {
-      background-color: #d1977d; }
+      background-color: #d1977d;
+      cursor: pointer; }
   .project-selector input[type="radio"]:checked + .project-group label {
     border: 1px solid white;
     padding: 5px;
-    background-color: #cc8e72; }
+    background-color: #cc8e72;
+    cursor: default; }
   .project-selector input[type="radio"]:checked + .project-group .project {
     width: 70%;
     display: inline-block;
     position: absolute;
     top: 0;
-    right: 0; }
+    left: 0; }
     .project-selector input[type="radio"]:checked + .project-group .project .screenshot {
       width: 100%;
       max-height: 270px;
@@ -135,10 +132,7 @@ h1 {
     .project-selector input[type="radio"]:checked + .project-group .project a:hover {
       background-color: #cc8e72; }
     .project-selector input[type="radio"]:checked + .project-group .project h3 a:hover {
-      background-color: #ff0066; }
-
-.project-points {
-  padding-left: 22px; }
+      background-color: #d30068; }
 
 /* ----- Contact ----- */
 #contact .container {
