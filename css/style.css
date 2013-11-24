@@ -127,11 +127,14 @@ h1 {
 
 /* ----- Contact ----- */
 #contact .container {
-  width: 50%; }
+  padding-top: 5%;
+  width: 50%;
+  text-align: center; }
 #contact ul {
   list-style: none;
   text-align: center; }
   #contact ul li {
     padding: 6px; }
-#contact a i {
-  margin-right: 8px; }
+#contact i {
+  margin-right: 8px;
+  text-decoration: none; }
