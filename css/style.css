@@ -17,13 +17,13 @@ section {
   min-height: 768px;
   margin: 0; }
   section:nth-of-type(1) {
-    background-color: #408068; }
+    background-color: #4d8a73; }
   section:nth-of-type(2) {
-    background-color: #be7d5f; }
+    background-color: #cc8e72; }
   section:nth-of-type(3) {
-    background-color: #be9e5f; }
+    background-color: #ccae72; }
   section:nth-of-type(4) {
-    background-color: #45577f; }
+    background-color: #526389; }
 
 .container {
   width: 60%;
@@ -77,7 +77,7 @@ h1 {
   letter-spacing: 1px; }
 
 #profile-photo {
-  background: url("/profile_photo.png") no-repeat;
+  background: url("/images/profile_photo.png") no-repeat;
   width: 200px;
   height: 200px;
   border-radius: 100px;
@@ -90,3 +90,28 @@ h1 {
 
 .footer a {
   margin-right: 12px; }
+
+/* ----- Projects ----- */
+.project {
+  display: none; }
+
+.project-selector {
+  position: relative; }
+  .project-selector input[type="radio"] {
+    display: none; }
+  .project-selector label {
+    display: block;
+    width: 20%;
+    margin-right: 100%; }
+    .project-selector label:hover {
+      background-color: #d1977d; }
+  .project-selector input[type="radio"]:checked + .project-group label {
+    background-color: #be7d5f; }
+  .project-selector input[type="radio"]:checked + .project-group .project {
+    width: calc(80% - 20px);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .project-selector input[type="radio"]:checked + .project-group .project .screenshot {
+      width: 100%; }
