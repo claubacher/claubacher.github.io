@@ -1,0 +1,229 @@
+$white: white;
+$color1: #4D8A73;
+$color2: #CC8E72;
+$color3: #CCAE72;
+$color3-accent: #E6CC9A;
+$color4: #526389;
+$highlight: #D30068;
+
+html, body { height: 100%; }
+
+body {
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+a:hover {
+  background-color: $highlight;
+}
+
+section {
+  // min-height: 768px;
+  margin: 0;
+  &:nth-of-type(1) {
+    background-color: $color1;
+    position: fixed;
+    z-index: 1;
+    height: 680px;
+  }
+  &:nth-of-type(2) {
+    background-color: $color2;
+    top: 680px;
+    z-index: 2;
+    height: 1400px;
+  }
+  &:nth-of-type(3) {
+    background-color: $color3;
+    top: 2080px;
+    z-index: 3;
+    height: 720px;
+  }
+  &:nth-of-type(4) {
+    background-color: $color4;
+    top: 2800px;
+    z-index: 4;
+    height: 680px;
+  }
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 4%;
+}
+
+h1 {
+  font-family: 'Yesteryear', sans-serif;
+  font-size: 96px;
+  font-weight: normal;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@mixin plain-ul {
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@mixin short-section {
+  .container {
+    padding-top: 4%;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* -------- Hi -------- */
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#salutation {
+  @include short-section;
+  @include plain-ul;
+  h1 {
+    -webkit-animation: 1s appear ease-out;
+    animation: 1s appear ease-out;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+/* ------ About me ------ */
+#about h3 {
+  margin-top: 0;
+}
+
+.pronunciation-guide {
+  letter-spacing: 1px;
+}
+#profile-photo {
+  background: url('/images/profile_photo.png') no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: right;
+  margin: 1em 0 16px 32px;
+}
+
+/* ----- Projects ----- */
+
+.project {
+  display: none;
+}
+
+.project-selector {
+  font-size: 20px;
+  position: relative;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: block;
+    width: 25%;
+    margin-left: 75%;
+    padding: 6px;
+    &:hover {
+      background-color: $color3-accent;
+      cursor: pointer;
+    }
+  }
+
+  input[type="radio"]:checked + .project-group {
+    label {
+      border: 1px solid $white;
+      padding: 5px;
+      background-color: $color3;
+      cursor: default;
+    }
+    .project {
+      width: 70%;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      .screenshot {
+        width: 100%;
+        max-height: 270px;
+        margin: 0;
+        opacity: 0.9;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      a:hover {
+        background-color: $color3;
+      }
+      h3 a:hover {
+        background-color: $highlight;
+      }
+    }
+  }
+}
+
+/* ----- Contact ----- */
+
+#contact {
+  @include short-section;
+  @include plain-ul;
+  i {
+    margin-right: 8px;
+    text-decoration: none;
+  }
+}
+
+/* ----- Scroll ----- */
+section.background {
+  position: fixed;
+  @for $i from 1 to 5 {
+    &:nth-of-type(#{$i}) {
+      top: #{($i - 1) * 20}px;
+    }
+  }
+}
+
+.fill {
+  position: absolute;
+  top: 3480px;
+  height: 680px;
+  width: 100%;
+}
