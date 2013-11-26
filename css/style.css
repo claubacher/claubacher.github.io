@@ -18,28 +18,25 @@ a:hover {
 
 section {
   margin: 0;
+  height: 700px;
   position: absolute;
   width: 100%; }
   section:nth-of-type(1) {
     background-color: #4d8a73;
     position: fixed;
-    z-index: 1;
-    height: 680px; }
+    z-index: 1; }
   section:nth-of-type(2) {
     background-color: #cc8e72;
-    top: 680px;
-    z-index: 2;
-    height: 1400px; }
+    top: 700px;
+    z-index: 2; }
   section:nth-of-type(3) {
     background-color: #ccae72;
-    top: 2080px;
-    z-index: 3;
-    height: 720px; }
+    top: 1400px;
+    z-index: 3; }
   section:nth-of-type(4) {
     background-color: #526389;
-    top: 2800px;
-    z-index: 4;
-    height: 680px; }
+    top: 2100px;
+    z-index: 4; }
 
 .container {
   width: 60%;
@@ -50,8 +47,8 @@ h1 {
   font-family: 'Yesteryear', sans-serif;
   font-size: 96px;
   font-weight: normal;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 10px;
   display: inline-block;
   width: 100%;
@@ -77,13 +74,14 @@ h1 {
     opacity: 1; } }
 
 #salutation .container {
-  padding-top: 4%;
   width: 50%;
   text-align: center; }
 #salutation ul {
   list-style: none;
   text-align: center;
   padding: 0; }
+#salutation .container {
+  padding-top: 6%; }
 #salutation h1 {
   -webkit-animation: 1s appear ease-out;
   animation: 1s appear ease-out; }
@@ -93,13 +91,15 @@ h1 {
 /* ------ About me ------ */
 #about {
   font-size: 20px; }
-  #about h3, #about p {
+  #about h1 {
+    margin-bottom: 3%; }
+  #about p {
     margin-top: 0; }
   #about a {
+    text-decoration: underline;
     padding: 0; }
-
-.pronunciation-guide {
-  letter-spacing: 1px; }
+    #about a:hover {
+      text-decoration: none; }
 
 #profile-photo {
   background: url("/images/profile_photo.png") center no-repeat;
@@ -122,7 +122,7 @@ h1 {
   .project-selector label {
     display: block;
     width: 25%;
-    margin-left: 75%;
+    margin-left: 70%;
     padding: 6px; }
     .project-selector label:hover {
       background-color: #e6cc9a;
@@ -133,14 +133,18 @@ h1 {
     background-color: #ccae72;
     cursor: default; }
   .project-selector input[type="radio"]:checked + .project-group .project {
-    width: 70%;
+    width: 65%;
     display: inline-block;
     position: absolute;
     top: 0;
     left: 0; }
+    .project-selector input[type="radio"]:checked + .project-group .project h3 {
+      margin: 8px 0 8px -2px; }
+    .project-selector input[type="radio"]:checked + .project-group .project p {
+      margin-top: 0; }
     .project-selector input[type="radio"]:checked + .project-group .project .screenshot {
       width: 100%;
-      max-height: 270px;
+      max-height: 245px;
       margin: 0;
       opacity: 0.9; }
       .project-selector input[type="radio"]:checked + .project-group .project .screenshot:hover {
@@ -152,7 +156,6 @@ h1 {
 
 /* ----- Contact ----- */
 #contact .container {
-  padding-top: 4%;
   width: 50%;
   text-align: center; }
 #contact ul {
@@ -162,6 +165,8 @@ h1 {
 #contact i {
   margin-right: 8px;
   text-decoration: none; }
+#contact h1 {
+  margin-bottom: 4%; }
 
 /* ----- Scroll ----- */
 section.background {
@@ -169,11 +174,11 @@ section.background {
   section.background:nth-of-type(1) {
     top: 0px; }
   section.background:nth-of-type(2) {
-    top: 20px; }
+    top: 14px; }
   section.background:nth-of-type(3) {
-    top: 40px; }
+    top: 28px; }
   section.background:nth-of-type(4) {
-    top: 60px; }
+    top: 42px; }
 
 .fill {
   position: absolute;
