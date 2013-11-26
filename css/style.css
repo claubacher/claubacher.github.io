@@ -91,19 +91,23 @@ h1 {
   margin-top: 0; }
 
 /* ------ About me ------ */
-#about h3 {
-  margin-top: 0; }
+#about {
+  font-size: 20px; }
+  #about h3, #about p {
+    margin-top: 0; }
+  #about a {
+    padding: 0; }
 
 .pronunciation-guide {
   letter-spacing: 1px; }
 
 #profile-photo {
-  background: url("/images/profile_photo.png") no-repeat;
-  width: 200px;
-  height: 200px;
+  background: url("/images/profile_photo.png") center no-repeat;
+  width: 180px;
+  height: 180px;
   border-radius: 100px;
-  float: right;
-  margin: 0 0 16px 32px;
+  float: left;
+  margin: 8px 32px 16px 0;
   opacity: 0.8; }
 
 /* ----- Projects ----- */
@@ -186,7 +190,7 @@ body {
 
 /* ---- Blinking arrow ----- */
 .arrow {
-  width: 6px;
+  width: 3px;
   height: 80px;
   margin: 25% auto;
   border-radius: 3px;
@@ -221,11 +225,11 @@ body {
   content: '';
   position: absolute;
   bottom: 0;
-  left: -13px;
-  border-bottom: 6px solid white;
-  border-right: 6px solid white;
-  border-top: 6px solid transparent;
-  border-left: 6px solid transparent;
+  left: -11.5px;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
   border-radius: 4px;
   width: 20px;
   height: 20px;

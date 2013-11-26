@@ -127,20 +127,27 @@ h1 {
 }
 
 /* ------ About me ------ */
-#about h3 {
-  margin-top: 0;
+#about {
+  font-size: 20px;
+  h3, p {
+    margin-top: 0;
+  }
+  a {
+    padding: 0;
+  }
 }
 
 .pronunciation-guide {
   letter-spacing: 1px;
 }
+
 #profile-photo {
-  background: url('/images/profile_photo.png') no-repeat;
-  width: 200px;
-  height: 200px;
+  background: url('/images/profile_photo.png') center no-repeat;
+  width: 180px;
+  height: 180px;
   border-radius: 100px;
-  float: right;
-  margin: 0 0 16px 32px;
+  float: left;
+  margin: 8px 32px 16px 0;
   opacity: 0.8;
 }
 
@@ -227,4 +234,57 @@ section.background {
   top: 3480px;
   height: 680px;
   width: 100%;
+}
+html, body { height: 100%; margin: 0; }
+
+body {
+  background: lightsteelblue;
+}
+
+/* ---- Blinking arrow ----- */
+
+$stem-height: 80px;
+$stem-width: 3px;
+$pointer-width: 3px;
+$pointer-space: 20px;
+
+.arrow {
+  width: $stem-width;
+  height: $stem-height;
+  margin: 25% auto;
+  border-radius: 3px;
+  background-color: white;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), white 75%);
+  -webkit-animation: 3s soft-blink 3s infinite alternate;
+  animation: 3s soft-blink 3s infinite alternate;
+  position: relative;
+  opacity: 0;
+}
+
+@-webkit-keyframes soft-blink {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+
+@keyframes soft-blink {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 0.8; }
+}
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: - ($pointer-space + $stem-width) / 2;
+  border-bottom: $pointer-width solid white;
+  border-right: $pointer-width solid white;
+  border-top: $pointer-width solid transparent;
+  border-left: $pointer-width solid transparent;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
