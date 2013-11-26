@@ -333,6 +333,9 @@ $pointer-space: 20px;
   }
 
   #projects {
+    h1 {
+      padding-bottom: 0;
+    }
     .project {
       width: 92%;
     }
@@ -341,7 +344,7 @@ $pointer-space: 20px;
     }
     .graphic-label {
       margin-top: 20px;
-      margin-left: 97%;
+      margin-left: 94%;
       display: block;
       width: 10px;
       height: 10px;

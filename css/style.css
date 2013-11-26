@@ -272,13 +272,15 @@ h1 {
     width: 180px;
     margin: 0 auto 20px auto; }
 
+  #projects h1 {
+    padding-bottom: 0; }
   #projects .project {
     width: 92%; }
   #projects .text-label {
     display: none; }
   #projects .graphic-label {
     margin-top: 20px;
-    margin-left: 97%;
+    margin-left: 94%;
     display: block;
     width: 10px;
     height: 10px;
