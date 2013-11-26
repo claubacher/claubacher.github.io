@@ -1,3 +1,2 @@
 # TODOs
-- RWD
 - Include baubles
