@@ -240,3 +240,15 @@ body {
   height: 20px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
+
+/* ----- Codepen icon ------ */
+.logo {
+  width: 30px;
+  /* required to center */
+  height: 25px;
+  text-align: center; }
+
+.inner-box {
+  fill: white;
+  -webkit-transform: scale(0.3) translateY(-10px) translateX(-22px);
+  transform: scale(0.3); }
