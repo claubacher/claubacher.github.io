@@ -296,7 +296,7 @@ $pointer-space: 20px;
 .inner-box {
   fill: white;
   -webkit-transform: scale(0.3) translateY(-10px) translateX(-22px);
-  transform: scale(0.3);
+  transform: scale(0.3) translateY(-10px) translateX(-22px);
 }
 
 /* ----- Small screens ------ */
