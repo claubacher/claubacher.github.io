@@ -18,6 +18,14 @@ if (window.matchMedia("screen and (min-width: 400px)").matches) {
   }
 
   $(document).ready(function() {
+    var $fill = $('<div></div>').css({
+      position: 'absolute',
+      top: '3480px',
+      height: '680px',
+      width: '100%'
+    });
+    $('body').append($fill);
+
     var mySections = [];
     var sections = $('section');
     for (var i = 0, len = sections.length; i < len; i++) {

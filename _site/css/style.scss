@@ -28,38 +28,14 @@ a:hover {
 }
 
 section {
-  // min-height: 768px;
+  min-height: 700px;
   margin: 0;
-  height: 700px;
-  &:nth-of-type(1) {
-    background-color: $color1;
-    position: fixed;
-    z-index: 1;
-    // height: 680px;
-  }
-  &:nth-of-type(2) {
-    background-color: $color2;
-    // top: 680px;
-    top: 700px;
-    z-index: 2;
-    // height: 1400px;
-  }
-  &:nth-of-type(3) {
-    background-color: $color3;
-    // top: 2080px;
-    top: 1400px;
-    z-index: 3;
-    // height: 720px;
-  }
-  &:nth-of-type(4) {
-    background-color: $color4;
-    // top: 2800px;
-    top: 2100px;
-    z-index: 4;
-    // height: 680px;
-  }
-  position: absolute;
   width: 100%;
+  &:nth-of-type(1) { background-color: $color1; }
+  &:nth-of-type(2) { background-color: $color2; }
+  &:nth-of-type(3) { background-color: $color3; }
+  &:nth-of-type(4) { background-color: $color4; }
+  position: relative;
 }
 
 .container {
@@ -72,11 +48,11 @@ h1 {
   font-family: 'Yesteryear', sans-serif;
   font-size: 96px;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-left: 10px;
-  display: inline-block;
-  width: 100%;
+  padding-right: 10px;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -85,13 +61,6 @@ h1 {
     list-style: none;
     text-align: center;
     padding: 0;
-  }
-}
-
-@mixin short-section {
-  .container {
-    width: 50%;
-    text-align: center;
   }
 }
 
@@ -119,9 +88,10 @@ h1 {
 }
 
 #salutation {
-  @include short-section;
   @include plain-ul;
   .container {
+    width: 50%;
+    text-align: center;
     padding-top: 6%;
   }
   h1 {
@@ -137,7 +107,7 @@ h1 {
 #about {
   font-size: 20px;
   h1 {
-    margin-bottom: 3%;
+    padding-bottom: 3%;
   }
   p {
     margin-top: 0;
@@ -155,7 +125,7 @@ h1 {
   background: url('/images/profile_photo.png') center no-repeat;
   width: 180px;
   height: 180px;
-  border-radius: 100px;
+  border-radius: 50%;
   float: left;
   margin: 8px 32px 16px 0;
   opacity: 0.8;
@@ -175,7 +145,7 @@ h1 {
     display: none;
   }
 
-  label {
+  .text-label {
     display: block;
     width: 25%;
     margin-left: 70%;
@@ -187,7 +157,7 @@ h1 {
   }
 
   input[type="radio"]:checked + .project-group {
-    label {
+    .text-label {
       border: 1px solid $white;
       padding: 5px;
       background-color: $color3;
@@ -227,8 +197,8 @@ h1 {
 /* ----- Contact ----- */
 
 #contact {
-  @include short-section;
   @include plain-ul;
+  text-align: center;
   i {
     margin-right: 8px;
     text-decoration: none;
@@ -239,27 +209,36 @@ h1 {
 }
 
 /* ----- Scroll ----- */
-section.background {
-  position: fixed;
-  @for $i from 1 to 5 {
-    &:nth-of-type(#{$i}) {
-      top: #{($i - 1) * 14}px;
+@media only screen and (min-width: 671px) {
+  section {
+    position: absolute;
+    &:nth-of-type(1) {
+      height: 700px;
+      z-index: 1;
+    }
+    &:nth-of-type(2) {
+      top: 700px;
+      z-index: 2;
+    }
+    &:nth-of-type(3) {
+      top: 1400px;
+      z-index: 3;
+    }
+    &:nth-of-type(4) {
+      top: 2100px;
+      z-index: 4;
+    }
+  }
+
+  section.background {
+    position: fixed;
+    @for $i from 1 to 5 {
+      &:nth-of-type(#{$i}) {
+        top: #{($i - 1) * 14}px;
+      }
     }
   }
 }
-
-.fill {
-  position: absolute;
-  top: 3480px;
-  height: 680px;
-  width: 100%;
-}
-html, body { height: 100%; margin: 0; }
-
-body {
-  background: lightsteelblue;
-}
-
 /* ---- Blinking arrow ----- */
 
 $stem-height: 80px;
@@ -318,4 +297,69 @@ $pointer-space: 20px;
   fill: white;
   -webkit-transform: scale(0.3) translateY(-10px) translateX(-22px);
   transform: scale(0.3);
+}
+
+/* ----- Small screens ------ */
+@media only screen and (max-width: 670px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  section {
+    padding-bottom: 60px;
+  }
+
+  #salutation {
+    position: relative;
+    min-height: 400px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 72px;
+  }
+
+  #profile-photo {
+    display: block;
+    float: none;
+    width: 180px;
+    margin: 0 auto 20px auto;
+  }
+
+  #projects {
+    .project {
+      width: 92%;
+    }
+    .text-label {
+      display: none;
+    }
+    .graphic-label {
+      margin-top: 20px;
+      margin-left: 97%;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border: 1px solid white;
+      border-radius: 50%;
+    }
+    input[type="radio"]:checked + .project-group {
+      .graphic-label {
+        background-color: white;
+      }
+
+      .screenshot {
+        width: 90%;
+      }
+    }
+  }
+
+  #contact {
+    min-height: 400px;
+  }
 }
