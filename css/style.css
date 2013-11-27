@@ -133,17 +133,23 @@ h1 {
       margin: 8px 0 8px -2px; }
     .project-selector input[type="radio"]:checked + .project-group .project p {
       margin-top: 0; }
-    .project-selector input[type="radio"]:checked + .project-group .project .screenshot {
-      width: 100%;
-      max-height: 245px;
-      margin: 0;
-      opacity: 0.9; }
-      .project-selector input[type="radio"]:checked + .project-group .project .screenshot:hover {
-        opacity: 1; }
-    .project-selector input[type="radio"]:checked + .project-group .project a:hover {
-      background-color: #ccae72; }
-    .project-selector input[type="radio"]:checked + .project-group .project h3 a:hover {
-      background-color: #d30068; }
+
+.screenshot {
+  width: 100%;
+  max-height: 245px;
+  margin: 0;
+  opacity: 0.9; }
+  .screenshot:hover {
+    opacity: 1; }
+
+.img-link:hover {
+  background-color: #ccae72; }
+
+.bauble-link {
+  text-decoration: underline;
+  margin-left: -2px; }
+  .bauble-link:hover {
+    text-decoration: none; }
 
 /* ----- Contact ----- */
 #contact {
@@ -193,8 +199,8 @@ h1 {
   border-radius: 3px;
   background-color: white;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white 75%);
-  -webkit-animation: 3s soft-blink 3s infinite alternate;
-  animation: 3s soft-blink 3s infinite alternate;
+  -webkit-animation: 3s soft-blink 4s infinite alternate;
+  animation: 3s soft-blink 4s infinite alternate;
   position: relative;
   opacity: 0; }
 
