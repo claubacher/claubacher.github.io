@@ -249,8 +249,8 @@ h1 {
 /* ---- Blinking arrow ----- */
 
 $stem-height: 80px;
-$stem-width: 3px;
-$pointer-width: 3px;
+$stem-width: 6px;
+$pointer-width: 6px;
 $pointer-space: 20px;
 
 .arrow {
@@ -260,8 +260,8 @@ $pointer-space: 20px;
   border-radius: 3px;
   background-color: white;
   background: linear-gradient(to bottom, rgba(255,255,255,0), white 75%);
-  -webkit-animation: 3s soft-blink 4s infinite alternate;
-  animation: 3s soft-blink 4s infinite alternate;
+  -webkit-animation: 3s soft-blink 4s 8 alternate;
+  animation: 3s soft-blink 4s 8 alternate;
   position: relative;
   opacity: 0;
 }
