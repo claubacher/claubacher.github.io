@@ -1,188 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Professional site of Chris Laubacher, full-stack Ruby on Rails, HTML, CSS, and JavaScript developer">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Yesteryear|Open+Sans:400italic,400,700italic,700' rel='stylesheet' type='text/css'>
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <title>Chris Laubacher</title>
-  <!--
-          :::    ::::::::::::::::   :::
-         :+:    :+::+:       :+:   :+:
-        +:+    +:++:+        +:+ +:+
-       +#++:++#+++#++:++#    +#++:
-      +#+    +#++#+          +#+
-     #+#    #+##+#          #+#
-    ###    #############   ###
-      ::::::::::::::    :::::::::::::::::::::: ::::::::::
-         :+:    :+:    :+::+:       :+:    :+::+:
-        +:+    +:+    +:++:+       +:+    +:++:+
-       +#+    +#++:++#+++#++:++#  +#++:++#: +#++:++#
-      +#+    +#+    +#++#+       +#+    +#++#+
-     #+#    #+#    #+##+#       #+#    #+##+#
-    ###    ###    ################    #############
+---
+layout: default
+title: Chris Laubacher
+---
+<section id="salutation">
+  <div class="container">
+    <h1>Hi</h1>
+    <p>My name is Chris.</p>
+    <p>I like JavaScript and Ruby and, yes, even CSS.</p>
+    <div class="arrow"></div>
+  </div>
+</section>
 
-    Check out this sweet vid: http://www.youtube.com/watch?v=ESy-Z8vqMrE
-    Then when you're done, send me a shout: claubacher@gmail.com
-  -->
-</head>
-<body>
-  <section id="salutation">
-    <div class="container">
-      <h1>Hi</h1>
-      <p>My name is Chris.</p>
-      <p>I like JavaScript and Ruby and, yes, even CSS.</p>
-      <div class="arrow"></div>
-    </div>
-  </section>
+<section id="about">
+  <div class="container">
+    <h1>About me</h1>
+    <div id="profile-photo"></div>
+    <p>I recently graduated from <a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a>, an immersive coding school where I spent 70-100 hours a week solving coding problems and building apps. I learned the fundamentals of Ruby, JavaScript, and the web, and I also became a whole lot better at working on teams.</p>
+    <p>Before that, I was working as an instructional designer, making e-learning courseware.</p>
+    <p>Before <em>that</em>, I was studying liberal arts at the University of Chicago.</p>
+    <p>I'm currently looking for new web development opportunities, so feel free to <a href="images/Laubacher_Resume_131013.pdf"download>download my résumé</a> and <a href="mailto:claubacher@gmail.com">shoot me an email</a>.</p>
+  </div>
+</section>
 
-  <section id="about">
-    <div class="container">
-      <h1>About me</h1>
-      <div id="profile-photo"></div>
-      <p>I recently graduated from <a href="http://devbootcamp.com/" target="_blank">Dev Bootcamp</a>, an immersive coding school where I spent 70-100 hours a week solving coding problems and building apps. I learned the fundamentals of Ruby, JavaScript, and the web, and I also became a whole lot better at working on teams.</p>
-      <p>Before that, I was working as an instructional designer, making e-learning courseware.</p>
-      <p>Before <em>that</em>, I was studying liberal arts at the University of Chicago.</p>
-      <p>I'm currently looking for new web development opportunities, so feel free to <a href="images/Laubacher_Resume_131013.pdf"download>download my résumé</a> and <a href="mailto:claubacher@gmail.com">shoot me an email</a>.</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <h1>Projects</h1>
-      <div class="project-selector">
-        <input type="radio" name="project-selection" id="viaggio" checked="true" />
-        <div class="project-group">
-          <label for="viaggio">
-            <span class="graphic-label"></span>
-            <span class="text-label">Viagg.io</span>
-          </label>
-          <div class="project">
-            <a href="http://viagg.io/" class="img-link" target="_blank"><img src="/images/viaggio.png" alt="Viagg.io screenshot" class="screenshot"></a>
-            <h3><a href="http://viagg.io/" class="project-name" target="_blank">Viagg.io</a> | <a href="https://github.com/th7/journey-tracker" target="_blank">View on GitHub</a></h3>
-            <p>Rails app that dynamically displays maps and travel photos. 8-day group project. My responsibilities included Google Maps JavaScript API integration and UI design (CSS/SASS).</p>
-          </div>
+<section id="projects">
+  <div class="container">
+    <h1>Projects</h1>
+    <div class="project-selector">
+      <input type="radio" name="project-selection" id="viaggio" checked="true" />
+      <div class="project-group">
+        <label for="viaggio">
+          <span class="graphic-label"></span>
+          <span class="text-label">Viagg.io</span>
+        </label>
+        <div class="project">
+          <a href="http://viagg.io/" class="img-link" target="_blank"><img src="/images/viaggio.png" alt="Viagg.io screenshot" class="screenshot"></a>
+          <h3><a href="http://viagg.io/" class="project-name" target="_blank">Viagg.io</a> | <a href="https://github.com/th7/journey-tracker" target="_blank">View on GitHub</a></h3>
+          <p>Rails app that dynamically displays maps and travel photos. 8-day group project. My responsibilities included Google Maps JavaScript API integration and UI design (CSS/SASS).</p>
         </div>
+      </div>
 
-        <input type="radio" name="project-selection" id="raplaughs" />
-        <div class="project-group">
-          <label for="raplaughs">
-            <span class="graphic-label"></span>
-            <span class="text-label">Rap Laughs</span>
-          </label>
-          <div class="project">
-            <a class="img-link" target="_blank" href="http://raplaughs.com/"><img src="/images/raplaughs.png" alt="Rap Laughs screenshot" class="screenshot"></a>
-            <h3><a target="_blank" href="http://raplaughs.com/" class="project-name">Rap Laughs</a> | <a target="_blank" href="https://github.com/priyamathew/raplaughs">View on GitHub</a></h3>
-            <p>Rails app that plays clips of rappers laughing and allows users to share rappers' laughs as embedded content in tweets. Group project at an 8-hour hackathon. We won the hackathon's top prize.</p>
-          </div>
+      <input type="radio" name="project-selection" id="raplaughs" />
+      <div class="project-group">
+        <label for="raplaughs">
+          <span class="graphic-label"></span>
+          <span class="text-label">Rap Laughs</span>
+        </label>
+        <div class="project">
+          <a class="img-link" target="_blank" href="http://raplaughs.com/"><img src="/images/raplaughs.png" alt="Rap Laughs screenshot" class="screenshot"></a>
+          <h3><a target="_blank" href="http://raplaughs.com/" class="project-name">Rap Laughs</a> | <a target="_blank" href="https://github.com/priyamathew/raplaughs">View on GitHub</a></h3>
+          <p>Rails app that plays clips of rappers laughing and allows users to share rappers' laughs as embedded content in tweets. Group project at an 8-hour hackathon. We won the hackathon's top prize.</p>
         </div>
+      </div>
 
-        <input type="radio" name="project-selection" id="otterflow">
-        <div class="project-group">
-          <label for="otterflow">
-            <span class="graphic-label"></span>
-            <span class="text-label">Otterflow</span>
-          </label>
-          <div class="project">
-            <a class="img-link" target="_blank" href="http://otterflow.herokuapp.com/"><img src="/images/otterflow.png" alt="Otterflow screenshot" class="screenshot"></a>
-            <h3><a target="_blank" href="http://otterflow.herokuapp.com/" class="project-name">Otterflow</a> | <a target="_blank" href="https://github.com/andmcgregor/otterflow">View on GitHub</a></h3>
-            <p>Rails app that mimics the functionality of Stack Overflow. 5-day group project. My responsibilities included database schema design and UI design.</p>
-          </div>
+      <input type="radio" name="project-selection" id="otterflow">
+      <div class="project-group">
+        <label for="otterflow">
+          <span class="graphic-label"></span>
+          <span class="text-label">Otterflow</span>
+        </label>
+        <div class="project">
+          <a class="img-link" target="_blank" href="http://otterflow.herokuapp.com/"><img src="/images/otterflow.png" alt="Otterflow screenshot" class="screenshot"></a>
+          <h3><a target="_blank" href="http://otterflow.herokuapp.com/" class="project-name">Otterflow</a> | <a target="_blank" href="https://github.com/andmcgregor/otterflow">View on GitHub</a></h3>
+          <p>Rails app that mimics the functionality of Stack Overflow. 5-day group project. My responsibilities included database schema design and UI design.</p>
         </div>
+      </div>
 
-        <input type="radio" name="project-selection" id="wtfsidtw">
-        <div class="project-group">
-          <label for="wtfsidtw">
-            <span class="graphic-label"></span>
-            <span class="text-label">WTFSIDTW</span>
-          </label>
-          <div class="project">
-            <a class="img-link" target="_blank" href="http://wtfshouldidothisweekend.herokuapp.com/"><img src="/images/wtfsidtw.png" alt="WTF Should I Do This Weekend screenshot" class="screenshot"></a>
-            <h3><a target="_blank" href="http://wtfshouldidothisweekend.herokuapp.com/" class="project-name">WTFSIDTW</a> | <a target="_blank" href="https://github.com/claubacher/wtfsidtw">View on GitHub</a></h3>
-            <p>Rails app that randomly suggests movies, concerts, and Groupon deals. 8-hour hackathon group project. My responsibilities included Rotten Tomatoes and Trailer Addict API integration.</p>
-          </div>
+      <input type="radio" name="project-selection" id="wtfsidtw">
+      <div class="project-group">
+        <label for="wtfsidtw">
+          <span class="graphic-label"></span>
+          <span class="text-label">WTFSIDTW</span>
+        </label>
+        <div class="project">
+          <a class="img-link" target="_blank" href="http://wtfshouldidothisweekend.herokuapp.com/"><img src="/images/wtfsidtw.png" alt="WTF Should I Do This Weekend screenshot" class="screenshot"></a>
+          <h3><a target="_blank" href="http://wtfshouldidothisweekend.herokuapp.com/" class="project-name">WTFSIDTW</a> | <a target="_blank" href="https://github.com/claubacher/wtfsidtw">View on GitHub</a></h3>
+          <p>Rails app that randomly suggests movies, concerts, and Groupon deals. 8-hour hackathon group project. My responsibilities included Rotten Tomatoes and Trailer Addict API integration.</p>
         </div>
+      </div>
 
-        <input type="radio" name="project-selection" id="friendsincommon">
-        <div class="project-group">
-          <label for="friendsincommon">
-            <span class="graphic-label"></span>
-            <span class="text-label">Friends in Common</span>
-          </label>
-          <div class="project">
-            <a class="img-link" target="_blank" href="http://friendsincommon.herokuapp.com/"><img src="/images/friendsincommon.png" alt="Friends in Common screenshot" class="screenshot"></a>
-            <h3><a target="_blank" href="http://friendsincommon.herokuapp.com/" class="project-name">Friends in Common</a> | <a target="_blank" href="https://github.com/claubacher/twitter-friends-in-common">View on GitHub</a></h3>
-            <p>Sinatra app that compares Twitter users' "friends" (users you follow who also follow you back). 1-day solo project. Uses OAuth for sign-in and AJAX for page updates.</p>
-          </div>
+      <input type="radio" name="project-selection" id="friendsincommon">
+      <div class="project-group">
+        <label for="friendsincommon">
+          <span class="graphic-label"></span>
+          <span class="text-label">Friends in Common</span>
+        </label>
+        <div class="project">
+          <a class="img-link" target="_blank" href="http://friendsincommon.herokuapp.com/"><img src="/images/friendsincommon.png" alt="Friends in Common screenshot" class="screenshot"></a>
+          <h3><a target="_blank" href="http://friendsincommon.herokuapp.com/" class="project-name">Friends in Common</a> | <a target="_blank" href="https://github.com/claubacher/twitter-friends-in-common">View on GitHub</a></h3>
+          <p>Sinatra app that compares Twitter users' "friends" (users you follow who also follow you back). 1-day solo project. Uses OAuth for sign-in and AJAX for page updates.</p>
         </div>
+      </div>
 
-        <input type="radio" name="project-selection" id="mariocart">
-        <div class="project-group">
-          <label for="mariocart">
-            <span class="graphic-label"></span>
-            <span class="text-label">Mario {C}art</span>
-          </label>
-          <div class="project">
-            <a class="img-link" target="_blank" href="http://mariocart.herokuapp.com/"><img src="/images/mariocart.png" alt="Mario Cart JS game screenshot" class="screenshot"></a>
-            <h3><a target="_blank" href="http://mariocart.herokuapp.com/" class="project-name">Mario {C}art</a> | <a target="_blank" href="https://github.com/claubacher/js_racer_mario">View on GitHub</a></h3>
-            <p>JavaScript racing game. 1-day solo project. User names and performance history persist in a Postgres database to keep track of wins.</p>
-          </div>
+      <input type="radio" name="project-selection" id="mariocart">
+      <div class="project-group">
+        <label for="mariocart">
+          <span class="graphic-label"></span>
+          <span class="text-label">Mario {C}art</span>
+        </label>
+        <div class="project">
+          <a class="img-link" target="_blank" href="http://mariocart.herokuapp.com/"><img src="/images/mariocart.png" alt="Mario Cart JS game screenshot" class="screenshot"></a>
+          <h3><a target="_blank" href="http://mariocart.herokuapp.com/" class="project-name">Mario {C}art</a> | <a target="_blank" href="https://github.com/claubacher/js_racer_mario">View on GitHub</a></h3>
+          <p>JavaScript racing game. 1-day solo project. User names and performance history persist in a Postgres database to keep track of wins.</p>
         </div>
+      </div>
 
-        <input type="radio" name="project-selection" id="baubles" />
-        <div class="project-group">
-          <label for="baubles">
-            <span class="graphic-label"></span>
-            <span class="text-label">Baubles</span>
-          </label>
-          <div class="project">
-            <h3>Baubles</h3>
-            <p>These are some toy projects I've been working on. One-offs, experiments, works in progress.</p>
-            <p><a class="bauble-link" target="_blank" href="/firebase-fridge-magnets/">Fridge Magnets</a> - Uses Firebase for realtime updates and jQuery for drag 'n' drop.</p>
-            <p><a class="bauble-link" target="_blank" href="/baubles/minesweeper/">Minesweeper</a> - JavaScript clone of everyone's favorite PC timewaster.</p>
-            <p><a class="bauble-link" target="_blank" href="/baubles/ripplr/">Ripplr</a> - An experiment with HTML5 canvas interactions.</p>
-            <p><a class="bauble-link" target="_blank" href="/baubles/nineboxes/">Nine Boxes</a> - CSS variations on a theme. Also, an excuse to play with the HTML5 history API.</p>
-          </div>
+      <input type="radio" name="project-selection" id="baubles" />
+      <div class="project-group">
+        <label for="baubles">
+          <span class="graphic-label"></span>
+          <span class="text-label">Baubles</span>
+        </label>
+        <div class="project">
+          <h3>Baubles</h3>
+          <p>These are some toy projects I've been working on. One-offs, experiments, works in progress.</p>
+          <p><a class="bauble-link" target="_blank" href="/firebase-fridge-magnets/">Fridge Magnets</a> - Uses Firebase for realtime updates and jQuery for drag 'n' drop.</p>
+          <p><a class="bauble-link" target="_blank" href="/baubles/minesweeper/">Minesweeper</a> - JavaScript clone of everyone's favorite PC timewaster.</p>
+          <p><a class="bauble-link" target="_blank" href="/baubles/ripplr/">Ripplr</a> - An experiment with HTML5 canvas interactions.</p>
+          <p><a class="bauble-link" target="_blank" href="/baubles/nineboxes/">Nine Boxes</a> - CSS variations on a theme. Also, an excuse to play with the HTML5 history API.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <div class="container">
-      <h1>Contact</h1>
-      <ul>
-        <li>
-          <a href="https://github.com/claubacher" target="_blank" class="social-link" id="github"><i class="icon-github"></i>Github</a>
-        </li>
-        <li>
-          <a href="http://codepen.io/claubacher" target="_blank" class="social-link" id="codepen">
-            <!-- http://codepen.io/chriscoyier/pen/GCyhb -->
-            <svg class="logo"><g><path class="inner-box" d="M97.147 48.319c-0.007-0.047-0.019-0.092-0.026-0.139c-0.016-0.09-0.032-0.18-0.056-0.268 c-0.014-0.053-0.033-0.104-0.05-0.154c-0.025-0.078-0.051-0.156-0.082-0.232c-0.021-0.053-0.047-0.105-0.071-0.156 c-0.033-0.072-0.068-0.143-0.108-0.211c-0.029-0.051-0.061-0.1-0.091-0.148c-0.043-0.066-0.087-0.131-0.135-0.193 c-0.035-0.047-0.072-0.094-0.109-0.139c-0.051-0.059-0.104-0.117-0.159-0.172c-0.042-0.043-0.083-0.086-0.127-0.125 c-0.059-0.053-0.119-0.104-0.181-0.152c-0.048-0.037-0.095-0.074-0.145-0.109c-0.019-0.012-0.035-0.027-0.053-0.039L61.817 23.5 c-1.072-0.715-2.468-0.715-3.54 0L24.34 46.081c-0.018 0.012-0.034 0.027-0.053 0.039c-0.05 0.035-0.097 0.072-0.144 0.1 c-0.062 0.049-0.123 0.1-0.181 0.152c-0.045 0.039-0.086 0.082-0.128 0.125c-0.056 0.055-0.108 0.113-0.158 0.2 c-0.038 0.045-0.075 0.092-0.11 0.139c-0.047 0.062-0.092 0.127-0.134 0.193c-0.032 0.049-0.062 0.098-0.092 0.1 c-0.039 0.068-0.074 0.139-0.108 0.211c-0.024 0.051-0.05 0.104-0.071 0.156c-0.031 0.076-0.057 0.154-0.082 0.2 c-0.017 0.051-0.035 0.102-0.05 0.154c-0.023 0.088-0.039 0.178-0.056 0.268c-0.008 0.047-0.02 0.092-0.025 0.1 c-0.019 0.137-0.029 0.275-0.029 0.416V71.36c0 0.1 0 0.3 0 0.418c0.006 0 0 0.1 0 0.1 c0.017 0.1 0 0.2 0.1 0.268c0.015 0.1 0 0.1 0.1 0.154c0.025 0.1 0.1 0.2 0.1 0.2 c0.021 0.1 0 0.1 0.1 0.154c0.034 0.1 0.1 0.1 0.1 0.213c0.029 0 0.1 0.1 0.1 0.1 c0.042 0.1 0.1 0.1 0.1 0.193c0.035 0 0.1 0.1 0.1 0.139c0.05 0.1 0.1 0.1 0.2 0.2 c0.042 0 0.1 0.1 0.1 0.125c0.058 0.1 0.1 0.1 0.2 0.152c0.047 0 0.1 0.1 0.1 0.1 c0.019 0 0 0 0.1 0.039L58.277 96.64c0.536 0.4 1.2 0.5 1.8 0.537c0.616 0 1.233-0.18 1.77-0.537 l33.938-22.625c0.018-0.012 0.034-0.027 0.053-0.039c0.05-0.035 0.097-0.072 0.145-0.109c0.062-0.049 0.122-0.1 0.181-0.152 c0.044-0.039 0.085-0.082 0.127-0.125c0.056-0.055 0.108-0.113 0.159-0.172c0.037-0.045 0.074-0.09 0.109-0.139 c0.048-0.062 0.092-0.127 0.135-0.193c0.03-0.049 0.062-0.098 0.091-0.146c0.04-0.07 0.075-0.141 0.108-0.213 c0.024-0.051 0.05-0.102 0.071-0.154c0.031-0.078 0.057-0.156 0.082-0.234c0.017-0.051 0.036-0.102 0.05-0.154 c0.023-0.088 0.04-0.178 0.056-0.268c0.008-0.045 0.02-0.092 0.026-0.137c0.018-0.139 0.028-0.277 0.028-0.418V48.735 C97.176 48.6 97.2 48.5 97.1 48.319z M63.238 32.073l25.001 16.666L77.072 56.21l-13.834-9.254V32.073z M56.856 32.1 v14.883L43.023 56.21l-11.168-7.471L56.856 32.073z M29.301 54.708l7.983 5.34l-7.983 5.34V54.708z M56.856 88.022L31.855 71.4 l11.168-7.469l13.833 9.252V88.022z M60.048 67.597l-11.286-7.549l11.286-7.549l11.285 7.549L60.048 67.597z M63.238 88.022V73.14 l13.834-9.252l11.167 7.469L63.238 88.022z M90.794 65.388l-7.982-5.34l7.982-5.34V65.388z"/></g></svg>Codepen</a>
-        </li>
-        <li>
-          <a href="http://www.linkedin.com/in/chrislaubacher" target="_blank" class="social-link" id="linkedin"><i class="icon-linkedin"></i>LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/clawbalker" target="_blank" class="social-link" id="twitter"><i class="icon-twitter"></i>Twitter</a>
-        </li>
-        <li>
-          <a href="mailto:claubacher@gmail.com" class="social-link" id="email"><i class="icon-envelope-alt"></i>Email</a>
-        </li>
-      </ul>
-    </div>
-  </section>
+<section id="contact">
+  <div class="container">
+    <h1>Contact</h1>
+    <ul>
+      <li>
+        <a href="https://github.com/claubacher" target="_blank" class="social-link" id="github"><i class="icon-github"></i>Github</a>
+      </li>
+      <li>
+        <a href="http://codepen.io/claubacher" target="_blank" class="social-link" id="codepen">
+          <!-- http://codepen.io/chriscoyier/pen/GCyhb -->
+          <svg class="logo"><g><path class="inner-box" d="M97.147 48.319c-0.007-0.047-0.019-0.092-0.026-0.139c-0.016-0.09-0.032-0.18-0.056-0.268 c-0.014-0.053-0.033-0.104-0.05-0.154c-0.025-0.078-0.051-0.156-0.082-0.232c-0.021-0.053-0.047-0.105-0.071-0.156 c-0.033-0.072-0.068-0.143-0.108-0.211c-0.029-0.051-0.061-0.1-0.091-0.148c-0.043-0.066-0.087-0.131-0.135-0.193 c-0.035-0.047-0.072-0.094-0.109-0.139c-0.051-0.059-0.104-0.117-0.159-0.172c-0.042-0.043-0.083-0.086-0.127-0.125 c-0.059-0.053-0.119-0.104-0.181-0.152c-0.048-0.037-0.095-0.074-0.145-0.109c-0.019-0.012-0.035-0.027-0.053-0.039L61.817 23.5 c-1.072-0.715-2.468-0.715-3.54 0L24.34 46.081c-0.018 0.012-0.034 0.027-0.053 0.039c-0.05 0.035-0.097 0.072-0.144 0.1 c-0.062 0.049-0.123 0.1-0.181 0.152c-0.045 0.039-0.086 0.082-0.128 0.125c-0.056 0.055-0.108 0.113-0.158 0.2 c-0.038 0.045-0.075 0.092-0.11 0.139c-0.047 0.062-0.092 0.127-0.134 0.193c-0.032 0.049-0.062 0.098-0.092 0.1 c-0.039 0.068-0.074 0.139-0.108 0.211c-0.024 0.051-0.05 0.104-0.071 0.156c-0.031 0.076-0.057 0.154-0.082 0.2 c-0.017 0.051-0.035 0.102-0.05 0.154c-0.023 0.088-0.039 0.178-0.056 0.268c-0.008 0.047-0.02 0.092-0.025 0.1 c-0.019 0.137-0.029 0.275-0.029 0.416V71.36c0 0.1 0 0.3 0 0.418c0.006 0 0 0.1 0 0.1 c0.017 0.1 0 0.2 0.1 0.268c0.015 0.1 0 0.1 0.1 0.154c0.025 0.1 0.1 0.2 0.1 0.2 c0.021 0.1 0 0.1 0.1 0.154c0.034 0.1 0.1 0.1 0.1 0.213c0.029 0 0.1 0.1 0.1 0.1 c0.042 0.1 0.1 0.1 0.1 0.193c0.035 0 0.1 0.1 0.1 0.139c0.05 0.1 0.1 0.1 0.2 0.2 c0.042 0 0.1 0.1 0.1 0.125c0.058 0.1 0.1 0.1 0.2 0.152c0.047 0 0.1 0.1 0.1 0.1 c0.019 0 0 0 0.1 0.039L58.277 96.64c0.536 0.4 1.2 0.5 1.8 0.537c0.616 0 1.233-0.18 1.77-0.537 l33.938-22.625c0.018-0.012 0.034-0.027 0.053-0.039c0.05-0.035 0.097-0.072 0.145-0.109c0.062-0.049 0.122-0.1 0.181-0.152 c0.044-0.039 0.085-0.082 0.127-0.125c0.056-0.055 0.108-0.113 0.159-0.172c0.037-0.045 0.074-0.09 0.109-0.139 c0.048-0.062 0.092-0.127 0.135-0.193c0.03-0.049 0.062-0.098 0.091-0.146c0.04-0.07 0.075-0.141 0.108-0.213 c0.024-0.051 0.05-0.102 0.071-0.154c0.031-0.078 0.057-0.156 0.082-0.234c0.017-0.051 0.036-0.102 0.05-0.154 c0.023-0.088 0.04-0.178 0.056-0.268c0.008-0.045 0.02-0.092 0.026-0.137c0.018-0.139 0.028-0.277 0.028-0.418V48.735 C97.176 48.6 97.2 48.5 97.1 48.319z M63.238 32.073l25.001 16.666L77.072 56.21l-13.834-9.254V32.073z M56.856 32.1 v14.883L43.023 56.21l-11.168-7.471L56.856 32.073z M29.301 54.708l7.983 5.34l-7.983 5.34V54.708z M56.856 88.022L31.855 71.4 l11.168-7.469l13.833 9.252V88.022z M60.048 67.597l-11.286-7.549l11.286-7.549l11.285 7.549L60.048 67.597z M63.238 88.022V73.14 l13.834-9.252l11.167 7.469L63.238 88.022z M90.794 65.388l-7.982-5.34l7.982-5.34V65.388z"/></g></svg>Codepen</a>
+      </li>
+      <li>
+        <a href="http://www.linkedin.com/in/chrislaubacher" target="_blank" class="social-link" id="linkedin"><i class="icon-linkedin"></i>LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/clawbalker" target="_blank" class="social-link" id="twitter"><i class="icon-twitter"></i>Twitter</a>
+      </li>
+      <li>
+        <a href="mailto:claubacher@gmail.com" class="social-link" id="email"><i class="icon-envelope-alt"></i>Email</a>
+      </li>
+    </ul>
+  </div>
+</section>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/main.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46027420-1', 'chrislaubacher.com');ga('send', 'pageview');
-  </script>
-</body>
-</html>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46027420-1', 'chrislaubacher.com');ga('send', 'pageview');
+</script>
