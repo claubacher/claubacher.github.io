@@ -145,12 +145,6 @@ h1 {
 .img-link:hover {
   background-color: #ccae72; }
 
-.bauble-link {
-  text-decoration: underline;
-  margin-left: -2px; }
-  .bauble-link:hover {
-    text-decoration: none; }
-
 /* ----- Contact ----- */
 #contact {
   text-align: center; }
